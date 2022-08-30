@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome | MEDICTION</title>
+
+
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+        <script src="js/jquery.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+    <body style="padding-top: 50px;">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'home' %}">Mediction</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="content">
+
+            <div id = "banner_image">
+                <div align = 'center' class="container">
+
+                        <div id="banner_content">
+                            <h1>We are Mediction</h1>
+                            <p>Predition with our 80+ accuracy! </p>
+                            <br/>
+
+                            <a href="{% url 'Diabetes' %}"  class="btn btn-danger btn-lg active">Predict Now</a>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <div class="row text-center" id="item_list">
+                    <div class="col-sm-4">
+                        <a href="{% url 'Diabetes' %}" >
+                            <div class="thumbnail">
+                                <img src="{% static 'img/Diabetes.jpg' %}" alt="">
+                                <div class="caption">
+                                    <h3>Diabetes</h3>
+                                    <p>Precting with our KNN algoritm.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="xyz.html" >
+                            <div class="thumbnail">
+                                <img src="{% static 'img/Can.jpg' %}" alt="">
+                                <div class="caption">
+                                    <h3>hgfgh</h3>
+                                    <p>Precting with our advance ML algoritm.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div align='center' class="container">
+
+                    <p>Copyright &copy; Mediction Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+
+            </div>
+        </footer>
+
+
+    </body>
+</html>
